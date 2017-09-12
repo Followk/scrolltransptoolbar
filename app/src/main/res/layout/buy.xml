@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="5dp"
+    android:paddingLeft="10dp"
+    android:background="@android:color/white"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/jia_ge_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥ 17.8"
+        android:textColor="#F3C80A"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jia_ge_tv"
+        android:layout_marginTop="5dp">
+
+        <TextView
+
+            android:id="@+id/hua_jia_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="价格 ￥20元" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@id/hua_jia_tv"
+            android:layout_alignRight="@id/hua_jia_tv"
+            android:layout_centerInParent="true"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#F89909"
+        android:text="立即抢购"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <com.test.scrolltransptoolbar.GradationScrollView
+        android:id="@+id/sl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/tup"/>
+
+            <TextView
+                android:id="@+id/tv_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这个商品挺好很多钱一个"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_height="wrap_content"
+                android:text="爱上京东福利看第几六块dsjflkjdsl考虑到技术了开房记录了多少的会计分录持续创新鲲鹏考虑到加肥加大立刻减肥考虑到啊啊额饿哦在在撇开颇为看；v看下欧辰积分卡来决定上课了富家大室开了房及接口都是垃圾付款六六大顺jflkdsjfkljdsklfjklds腹肌点开链接发了多少荆防颗粒都结束了开发简单来说积分卡兰蒂斯积分卡兰蒂斯荆防颗粒绝地反击宽带连接富兰克林的第三方打扫了风景代课老师发建立肯定是荆防颗粒电视剧了开发进度开始了积分卡劳动局分开了的数据防雷接地上课了发建立肯定是荆防颗粒电视剧了卡即可两地分居卡兰蒂斯荆防颗粒都是接口丽枫酒店上课了积分卡兰蒂斯荆防颗粒的数据 记得睡浪费空间都是垃圾发了多少发了扣都结束了富家大室了积分多少时间理发店数据库连接"/>
+        </LinearLayout>
+
+    </com.test.scrolltransptoolbar.GradationScrollView>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@android:color/transparent"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:navigationIcon="@mipmap/ic_launcher">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@android:drawable/btn_dialog"/>
+            <TextView
+                android:id="@+id/tltle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@android:color/transparent"
+                android:layout_centerInParent="true"
+                android:text="商品详情" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

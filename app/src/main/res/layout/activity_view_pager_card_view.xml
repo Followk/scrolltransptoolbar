@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.test.scrolltransptoolbar.CardViewPage
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:clipToPadding="false"
+        android:layout_centerInParent="true"
+        android:overScrollMode="never"
+        android:paddingBottom="20dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+    </com.test.scrolltransptoolbar.CardViewPage>
+</RelativeLayout>

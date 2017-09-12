@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:background="@color/colorAccent"
+        android:layout_height="?actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商品详情"
+                    android:textSize="22dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/white"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <com.test.scrolltransptoolbar.GradationScrollView
+        android:id="@+id/scrollview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_height="match_parent">
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:src="@mipmap/tup"/>
+
+
+
+
+        <include android:id="@+id/top_rl" layout="@layout/buy"/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:textSize="18dp"
+              android:text="转帖请注明本文出自xiaanming的博客（http://blog.csdn.net/xiaanming/article/details/17761431），请尊重他人的辛勤劳动成果，谢谢！
+我之前写了一篇关于美团网，大众点评的购买框效果的文章Android对ScrollView滚动监听，实现美团、大众点评的购买悬浮效果，我自己感觉效果并不是很好，如果快速滑动界面，显示悬浮框的时候会出现一卡的现象，有些朋友说有时候会出现两个布局的情况，特别是对ScrollView滚动的Y值得监听，我还使用了Handler来获取，还有朋友给我介绍了Scrolling Tricks这个东西，我下载试了下，确实美团网，大众点评的购买框用的是这种效果，但是Scrolling Tricks只能在API11以上使用，这个有点小悲剧，然后我做了下修改，并将实现思路分享给大家，实现起来很简单
+首先还是要先对ScrollView进行滚动监听，直接在onScrollChanged()方法中当myScrollView向上滚动，而上面购买布局的上边缘始终要和myScrollView的上边缘保持mBuyLayout.getTop()这个距离，所以上面的购买布局也跟着向上滚动，当scrollY大于mBuyLayout.getTop()的时候，表示购买布局上边缘滑动到了导航栏布局，所以此时购买布局的上边缘与myScrollView的上边缘始终要保持scrollY这个距离，所以购买布局才会一直在导航栏下面，就好像粘住了一样，不知道你了解了没有？好了，不过根据这种思路你也可以刚开始使用一个悬浮框来覆盖在下面的购买布局上面，然后onScroll()方法中更新悬浮框的位置，不过悬浮框的x,y不是相对于就能获取滚动的Y值，之前那篇文章使用了Handler，走弯路了，直接看代码吧"/>
+      </LinearLayout>
+
+            <include android:id="@+id/top_rl1" layout="@layout/buy"/>
+    </FrameLayout>
+    </com.test.scrolltransptoolbar.GradationScrollView>
+
+</LinearLayout>
